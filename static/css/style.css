@@ -3774,9 +3774,8 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 }
 
 .yusi-logo:before {
-	background-image: url(../images/动漫2.png);
+	background-image: url(../images/头图.png);
 	content: "";
-
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
@@ -4457,7 +4456,7 @@ a.badge:focus,a.badge:hover,a.label:focus,a.label:hover {
 }
 
 .badge-important,.label-important {
-	background-color: #d9534f
+	background-color:  #d9534f
 }
 
 .badge-important .label-arrow,.label-important .label-arrow {
