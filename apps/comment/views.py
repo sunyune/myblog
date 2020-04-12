@@ -29,7 +29,6 @@ def confirm(new_content, comment_post_ID, auser):
 @require_POST
 def AddcommentView(request):
 
-    print('ssssss')
     if request.is_ajax():
         data = request.POST
         # 评论内容哦你
@@ -82,7 +81,7 @@ def AddcommentView(request):
         # 给我留言页面评论
         elif comment_post_ID == 'message':
             if comment_parent == '0':
-                new_comment = MessageComment(MessageComment, auser, new_content)
+                new_comment = MessageComment(author=auser, content=new_content, parent=None, rep_to=None)
             else:
                 parent = MessageComment.objects.get(id=comment_parent)
                 new_comment = MessageComment(author=auser, content=new_content, parent=parent, rep_to=None)
@@ -102,6 +101,6 @@ def AddcommentView(request):
         request.session['tid'] = new_comment.author.id
 
         # 返回当前评论，直接返回HTML内容刚给前端，使用JS在指定位置进行数据展示
-        return HttpResponse('''<li class="" id="comment-"><div class="c-avatar"><img alt='' src='https://cuiqingcai.com/avatar/.png' class='avatar avatar-54 photo avatar-default' height='54' width='54' /><div class="c-main" id="div-comment-">{0}<div class="c-meta"><span class="c-author">{1}</span></div></div></div>'''.format(new_content, author), content_type='text/html;charset="utf-8"')
+        return HttpResponse('''<li class="" id="comment-"><div class="c-avatar"><div class="c-main" id="div-comment-">{0}<div class="c-meta"><span class="c-author">{1}</span></div></div></div>'''.format(new_content, author), content_type='text/html;charset="utf-8"')
 
     return HttpResponse('参数错误', content_type='text/html;charset="utf-8"')
