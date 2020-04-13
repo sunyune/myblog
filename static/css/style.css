@@ -3772,7 +3772,12 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	display: block;
 	text-align: left;
 }
-
+#tp-weather-widget .sw-container {
+  left: unset;
+  right: 10px;
+  top: 10px;
+  bottom: unset;
+}
 .yusi-logo:before {
 	background-image: url(../images/头图.png);
 	content: "";

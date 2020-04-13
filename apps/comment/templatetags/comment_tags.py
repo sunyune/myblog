@@ -1,7 +1,7 @@
 # 创建了新的tags标签文件后必须重启服务器
 from django.utils.safestring import mark_safe
 from django import template
-from ..models import ArticleComment,AboutComment, MessageComment
+from ..models import ArticleComment, AboutComment, MessageComment
 
 
 register = template.Library()

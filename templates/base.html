@@ -174,8 +174,22 @@
                             <span class="yusi-bloger">devops运维之路</span>
                         </h1>
                     </a>
-                </div>
-
+            </div>
+            <div id="tp-weather-widget" class="navbar-form navbar-form-sm navbar-left shift"></div>
+              <script>
+                (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+                window.SeniverseWeatherWidget('show', {
+                  flavor: "bubble",
+                  location: "WX4FBXXFKE4F",
+                  geolocation: true,
+                  language: "zh-Hans",
+                  unit: "c",
+                  theme: "auto",
+                  token: "675bd5b8-33dd-4a74-9f55-f141fadee9aa",
+                  hover: "enabled",
+                  container: "tp-weather-widget"
+                })
+              </script>
             <!--导航条-->
             <div id="nav-header" class="navbar">
                 <ul class="nav">
