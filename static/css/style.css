@@ -3491,7 +3491,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 }
 
 .container-inner {
-	max-width: 1226px;
+	max-width: 1660px;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
@@ -3772,19 +3772,14 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	display: block;
 	text-align: left;
 }
-#tp-weather-widget .sw-container {
-  left: unset;
-  right: 10px;
-  top: 10px;
-  bottom: unset;
-}
+
 .yusi-logo:before {
-	background-image: url(../images/头图.png);
+	background-image: url(../images/头图2.jpg);
 	content: "";
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
- 	opacity: 1;
+ 	opacity: 0.9;
   	top: 0;
   	left: 0;
 	bottom: 0;
@@ -3843,7 +3838,21 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	left: 13px;
 	opacity: .2
 }
+#tp-weather-widget .sw-container {
+  left: unset;
+  right: 10px;
+  top: 10px;
+  bottom: unset;
+}
 
+.spig {display:block;width:160px;height:160px;position:absolute;top: -200px;left: 160px;z-index:9999;}
+#message{color :#191919;border: 1px solid #c4c4c4;background:#ddd;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;min-height:1em;padding:5px;top:-30px;position:absolute;text-align:center;width:auto !important;z-index:10000;-moz-box-shadow:0 0 15px #eeeeee;-webkit-box-shadow:0 0 15px #eeeeee;border-color:#eeeeee;box-shadow:0 0 15px #eeeeee;outline:none;}
+.mumu{
+    width:160px;
+    height:160px;
+    cursor: move;
+    background:url(../images/spig.png) no-repeat;
+}
 .toggle-search {
 	position: absolute;
 	margin-top: 0;
@@ -3861,6 +3870,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 .toggle-search.active,.toggle-search:hover {
 	opacity: .75
 }
+
 
 .search-expand {
 	display: none;
